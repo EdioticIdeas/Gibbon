@@ -97,41 +97,25 @@ public class DashboardActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            // Handle the camera action
-           // SpannableString sAccent = new SpannableString("Profile");
-           // sAccent.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, sAccent.length(), 0);
-           // item.setTitle(sAccent);
 
         } else if (id == R.id.nav_attendence) {
 
-            SpannableString s = new SpannableString("Attendance");
-            s.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, s.length(), 0);
-            item.setTitle(s);
+
         } else if (id == R.id.nav_notice) {
 
-            SpannableString s = new SpannableString("Notice Board");
-            s.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, s.length(), 0);
-            item.setTitle(s);
+
         } else if (id == R.id.nav_calender) {
 
-            SpannableString s = new SpannableString("Academic Calender");
-            s.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, s.length(), 0);
-            item.setTitle(s);
+
         } else if (id == R.id.nav_timeTable) {
 
-            SpannableString s = new SpannableString("Time Table");
-            s.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, s.length(), 0);
-            item.setTitle(s);
+
         } else if (id == R.id.nav_faculty) {
 
-            SpannableString s = new SpannableString("Faculty");
-            s.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, s.length(), 0);
-            item.setTitle(s);
+
         }else if(id == R.id.nav_fees){
 
-            SpannableString s = new SpannableString("Fees");
-            s.setSpan(new ForegroundColorSpan(Color.parseColor("#E84A5F")), 0, s.length(), 0);
-            item.setTitle(s);
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

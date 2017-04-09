@@ -23,19 +23,14 @@
             android:id="@+id/nav_timeTable"
             android:icon="@drawable/ic_assignment_white_24dp"
             android:title="Time Table" />
+        <item
+            android:id="@+id/nav_faculty"
+            android:icon="@drawable/ic_supervisor_account_white_24dp"
+            android:title="Faculty"
+                 />
+        <item
+            android:id="@+id/nav_fees"
+            android:icon="@drawable/ic_account_balance_white_24dp"
+            android:title="Fees" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_faculty"
-                android:icon="@drawable/ic_supervisor_account_white_24dp"
-                android:title="Faculty" />
-            <item
-                android:id="@+id/nav_fees"
-                android:icon="@drawable/ic_account_balance_white_24dp"
-                android:title="Fees" />
-        </menu>
-    </item>
-
 </menu>
