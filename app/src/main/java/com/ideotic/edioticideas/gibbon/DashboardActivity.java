@@ -1,11 +1,11 @@
 package com.ideotic.edioticideas.gibbon;
 
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,24 +18,43 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.PieData;
+import com.github.mikephil.charting.data.PieDataSet;
+
+import java.util.ArrayList;
+
+
 public class DashboardActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private TextView userName,userId;
+    private TextView userName, userId;
     private ImageView profilePic;
+    NavigationView navigationView = null;
+    Toolbar toolbar = null;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        //Setting Fragment initially.
+        Fragment_Student_Dashboard stuDash = new Fragment_Student_Dashboard();
+        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container,stuDash);
+        fragmentTransaction.commit();
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Chat :) Coming soon", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -46,16 +65,17 @@ public class DashboardActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         initialize();
     }
 
-    public void initialize(){
-        userName = (TextView)findViewById(R.id.textView_nav_header_name);
-        userId = (TextView)findViewById(R.id.textView_nav_header_userId);
-        profilePic = (ImageView)findViewById(R.id.profile_image);
+    public void initialize() {
+        userName = (TextView) findViewById(R.id.textView_nav_header_name);
+        userId = (TextView) findViewById(R.id.textView_nav_header_userId);
+        profilePic = (ImageView) findViewById(R.id.profile_image);
+
     }
 
     @Override
@@ -97,6 +117,10 @@ public class DashboardActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
+            Fragment_Student_Profile stuProf = new Fragment_Student_Profile();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,stuProf);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_attendence) {
 
@@ -113,13 +137,61 @@ public class DashboardActivity extends AppCompatActivity
         } else if (id == R.id.nav_faculty) {
 
 
-        }else if(id == R.id.nav_fees){
+        } else if (id == R.id.nav_fees) {
 
+
+        }else if(id == R.id.nav_dashboard){
+            Fragment_Student_Dashboard stuDash = new Fragment_Student_Dashboard();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,stuDash);
+            fragmentTransaction.commit();
+
+        }else if(id == R.id.nav_library){
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    //Pie Chart Code
+    public PieData getPieData(){
+
+        ServerDatabase databse = new ServerDatabase();
+        databse.getPieData();
+
+        // Data axis for Pie Chart
+         float[] yData = {databse.present,databse.absent,databse.holidays};
+         String[] xData = {"Present %","Absent %","Holidays %"};
+
+
+        ArrayList<Entry> yVals1 = new ArrayList<>();
+
+        for (int i = 0; i < yData.length; i++)
+            yVals1.add(new Entry(yData[i], i));
+
+        ArrayList<String> xVals = new ArrayList<String>();
+
+        for (int i = 0; i < xData.length; i++)
+            xVals.add(xData[i]);
+
+        // create pie data set
+        PieDataSet dataSet = new PieDataSet(yVals1,"");
+        dataSet.setSliceSpace(3);
+        dataSet.setSelectionShift(5);
+
+
+        // add many colors
+        ArrayList<Integer> colors = new ArrayList<>();
+
+        colors.add(Color.parseColor("#c6ff00"));
+        colors.add(Color.parseColor("#f44336"));
+        colors.add(Color.parseColor("#18ffff"));
+
+        dataSet.setColors(colors);
+
+        PieData pieData = new PieData(xVals,dataSet);
+        return pieData;
     }
 }
