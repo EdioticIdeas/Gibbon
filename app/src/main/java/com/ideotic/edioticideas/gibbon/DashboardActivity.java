@@ -117,16 +117,25 @@ public class DashboardActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
+            this.setTitle("Profile");
             Fragment_Student_Profile stuProf = new Fragment_Student_Profile();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,stuProf);
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_attendence) {
-
+            this.setTitle("Attendance");
+            Fragment_Student_Attandence stuAten = new Fragment_Student_Attandence();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,stuAten);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_notice) {
-
+            this.setTitle("Notice Board");
+            Fragment_NoticeBoard stuNot = new Fragment_NoticeBoard();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,stuNot);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_calender) {
 
@@ -141,6 +150,7 @@ public class DashboardActivity extends AppCompatActivity
 
 
         }else if(id == R.id.nav_dashboard){
+            this.setTitle("DashBoard");
             Fragment_Student_Dashboard stuDash = new Fragment_Student_Dashboard();
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container,stuDash);

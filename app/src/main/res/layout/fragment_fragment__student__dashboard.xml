@@ -2,9 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#dddddd"
     android:padding="0dp"
-    tools:context="com.ideotic.edioticideas.gibbon.Fragment_Student_Dashboard"
-    android:background="#dddddd">
+    tools:context="com.ideotic.edioticideas.gibbon.Fragment_Student_Dashboard">
 
 
     <ScrollView
@@ -494,34 +494,161 @@
                         android:layout_width="match_parent"
                         android:layout_height="50sp"
                         android:background="@color/colorAccent"
-                        android:elevation="5sp"></RelativeLayout>
+                        android:elevation="5sp">
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="17dp"
+                            android:layout_toStartOf="@+id/textView20"
+                            android:gravity="center_vertical"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="120px" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="23dp"
+                            android:text="Academic Events"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="83sp"></RelativeLayout>
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view11"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3events_1"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view11"
+                            android:ellipsize="end"
+                            android:text="Summer Holidays 24th April 2017 - 30th june 2017."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
 
                     <View
-                        android:layout_width="match_parent"
+                        android:layout_width="400sp"
                         android:layout_height="1px"
                         android:layout_gravity="center_horizontal"
                         android:background="#536065" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="83sp"></RelativeLayout>
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view12"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3events_2"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view12"
+                            android:ellipsize="end"
+                            android:text="Summer holidays starting from 2nd of july till 4th of December enjoy cheers!!"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
 
                     <View
-                        android:layout_width="match_parent"
+                        android:layout_width="400sp"
                         android:layout_height="1px"
                         android:layout_gravity="center_horizontal"
                         android:background="#536065" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="83sp"></RelativeLayout>
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view13"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3events_3"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view13"
+                            android:ellipsize="end"
+                            android:text="Tech Fest Halcyon 2017 from 24th April onwards."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
 
                     <View
-                        android:layout_width="match_parent"
+                        android:layout_width="400sp"
                         android:layout_height="1px"
                         android:layout_gravity="center_horizontal"
                         android:background="#536065" />
@@ -536,8 +663,180 @@
                 android:layout_marginRight="2sp"
                 android:layout_marginTop="20sp"
                 android:background="#ffffff"
-                android:elevation="2sp"></RelativeLayout>
+                android:elevation="2sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@color/colorAccent"
+                        android:elevation="5sp">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="150dp"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="120px" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="23dp"
+                            android:text="Top Notices"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view8"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3notices_1"
+                            android:layout_width="340sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view8"
+                            android:ellipsize="end"
+                            android:text="Exams are postponed and will never going to happen again Cheers!"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view9"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3notices_2"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view9"
+                            android:ellipsize="end"
+                            android:text="Summer holidays starting from 2nd of july till 4th of December enjoy cheers!!"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view10"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3notices_3"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view10"
+                            android:ellipsize="end"
+                            android:text="Campus Drive activities starting from 24 april . Google, Amazon, MindTree, Microsoft are lined up."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+                </LinearLayout>
+            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
+
+
 </RelativeLayout>
