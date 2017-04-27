@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ideotic.edioticideas.gibbon">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +24,18 @@
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimetableActivity"
+            android:label="@string/title_activity_timetable"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeacherDashboardActivity"
+            android:label="@string/title_activity_teacher_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Timetable_TeacherActivity"
+            android:label="Time Table"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

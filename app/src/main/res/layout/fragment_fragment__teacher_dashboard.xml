@@ -134,24 +134,21 @@
                                 android:layout_margin="10sp"
                                 android:layout_toEndOf="@+id/view"
                                 android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
                                 android:text="Computer Networks"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/dark" />
 
                             <TextView
                                 android:id="@+id/student_tt_first_faculty"
-                                android:layout_width="150sp"
-                                android:layout_height="25sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_alignParentBottom="true"
                                 android:layout_alignStart="@+id/student_tt_first_subject"
                                 android:layout_margin="10sp"
                                 android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Viswanath Gupta"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
 
                             <TextView
                                 android:id="@+id/student_tt_first_room"
@@ -164,6 +161,17 @@
                                 android:text="B203"
                                 android:textAppearance="?android:attr/textAppearanceSmall"
                                 android:textColor="@color/colorAccent" />
+
+                            <TextView
+                                android:id="@+id/textView_sem_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp"
+                                android:layout_alignBaseline="@+id/student_tt_first_faculty"
+                                android:layout_alignBottom="@+id/student_tt_first_faculty"
+                                android:layout_toEndOf="@+id/student_tt_first_faculty" />
 
                         </RelativeLayout>
 
@@ -211,24 +219,33 @@
                                 android:layout_margin="10sp"
                                 android:layout_toEndOf="@+id/view1"
                                 android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
                                 android:text="Database Management System"
                                 android:textAppearance="?android:attr/textAppearanceMedium"
                                 android:textColor="@color/dark" />
 
                             <TextView
                                 android:id="@+id/student_tt_second_faculty"
-                                android:layout_width="150sp"
-                                android:layout_height="25sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_alignParentBottom="true"
                                 android:layout_alignStart="@+id/student_tt_second_subject"
                                 android:layout_margin="10sp"
                                 android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Suman Chandanan"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textView_sem2_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/student_tt_second_faculty"
+                                android:layout_alignBottom="@+id/student_tt_second_faculty"
+                                android:layout_toEndOf="@+id/student_tt_second_faculty"
+                                android:text="7"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
 
                             <TextView
                                 android:id="@+id/student_tt_second_room"
@@ -279,45 +296,6 @@
                                 android:layout_margin="10sp"
                                 android:text="A.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
-
-                            <TextView
-                                android:id="@+id/student_tt_third_subject"
-                                android:layout_width="250sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentTop="true"
-                                android:layout_margin="10sp"
-                                android:layout_toEndOf="@+id/view3"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Database Management System"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:textColor="@color/dark" />
-
-                            <TextView
-                                android:id="@+id/student_tt_third_faculty"
-                                android:layout_width="150sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentBottom="true"
-                                android:layout_alignStart="@+id/student_tt_third_subject"
-                                android:layout_margin="10sp"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Suman Chandanan"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                            <TextView
-                                android:id="@+id/student_tt_third_room"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_below="@+id/textView6"
-                                android:layout_marginLeft="5sp"
-                                android:layout_marginRight="5sp"
-                                android:text="B204"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
-                                android:textColor="@color/colorAccent" />
 
                         </RelativeLayout>
 
@@ -414,45 +392,6 @@
                                 android:text="P.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                            <TextView
-                                android:id="@+id/student_tt_fourth_subject"
-                                android:layout_width="250sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentTop="true"
-                                android:layout_margin="10sp"
-                                android:layout_toEndOf="@+id/view5"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Database Management System"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:textColor="@color/dark" />
-
-                            <TextView
-                                android:id="@+id/student_tt_fourth_faculty"
-                                android:layout_width="150sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentBottom="true"
-                                android:layout_alignStart="@+id/student_tt_fourth_subject"
-                                android:layout_margin="10sp"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Suman Chandanan"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                            <TextView
-                                android:id="@+id/student_tt_fourth_room"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_below="@+id/textView10"
-                                android:layout_marginLeft="5sp"
-                                android:layout_marginRight="5sp"
-                                android:text="B204"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
-                                android:textColor="@color/colorAccent" />
-
 
                         </RelativeLayout>
 
@@ -491,45 +430,6 @@
                                 android:layout_margin="10sp"
                                 android:text="P.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
-
-                            <TextView
-                                android:id="@+id/student_tt_fifth_subject"
-                                android:layout_width="250sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentTop="true"
-                                android:layout_margin="10sp"
-                                android:layout_toEndOf="@+id/view6"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Database Management System"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:textColor="@color/dark" />
-
-                            <TextView
-                                android:id="@+id/student_tt_fifth_faculty"
-                                android:layout_width="150sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentBottom="true"
-                                android:layout_alignStart="@+id/student_tt_fifth_subject"
-                                android:layout_margin="10sp"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Suman Chandanan"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                            <TextView
-                                android:id="@+id/student_tt_fifth_room"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_below="@+id/textView12"
-                                android:layout_marginLeft="5sp"
-                                android:layout_marginRight="5sp"
-                                android:text="B204"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
-                                android:textColor="@color/colorAccent" />
 
 
                         </RelativeLayout>
@@ -570,45 +470,6 @@
                                 android:text="P.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                            <TextView
-                                android:id="@+id/student_tt_sixth_subject"
-                                android:layout_width="250sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentTop="true"
-                                android:layout_margin="10sp"
-                                android:layout_toEndOf="@+id/view7"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Database Management System"
-                                android:textAppearance="?android:attr/textAppearanceMedium"
-                                android:textColor="@color/dark" />
-
-                            <TextView
-                                android:id="@+id/student_tt_sixth_faculty"
-                                android:layout_width="150sp"
-                                android:layout_height="25sp"
-                                android:layout_alignParentBottom="true"
-                                android:layout_alignStart="@+id/student_tt_sixth_subject"
-                                android:layout_margin="10sp"
-                                android:ellipsize="marquee"
-                                android:marqueeRepeatLimit="marquee_forever"
-                                android:singleLine="true"
-                                android:text="Suman Chandanan"
-                                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                            <TextView
-                                android:id="@+id/student_tt_sixth_room"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_below="@+id/textView14"
-                                android:layout_marginLeft="5sp"
-                                android:layout_marginRight="5sp"
-                                android:text="B204"
-                                android:textAppearance="?android:attr/textAppearanceSmall"
-                                android:textColor="@color/colorAccent" />
-
 
                         </RelativeLayout>
                     </LinearLayout>
@@ -627,13 +488,6 @@
                 android:elevation="2sp"
                 android:padding="8sp">
 
-
-                <com.github.mikephil.charting.charts.PieChart
-                    android:id="@+id/student_pie_attendance"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </com.github.mikephil.charting.charts.PieChart>
 
             </RelativeLayout>
 

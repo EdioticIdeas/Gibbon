@@ -18,28 +18,28 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText userName,password;
-    private TextView uName,pass,fPass,signup,gibbon;
+    private EditText userName, password;
+    private TextView uName, pass, fPass, signup, gibbon;
     private Button signIn;
 
-    private static String userId,passWord;
-    private static boolean verify;
+    private static String userId, passWord;
+    private static int verify;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        userName = (EditText)findViewById(R.id.editText_username);
-        password = (EditText)findViewById(R.id.editText_password);
+        userName = (EditText) findViewById(R.id.editText_username);
+        password = (EditText) findViewById(R.id.editText_password);
 
-        uName = (TextView)findViewById(R.id.textView_username);
-        pass = (TextView)findViewById(R.id.textView_password);
-        fPass = (TextView)findViewById(R.id.textView_fPass);
-        signup = (TextView)findViewById(R.id.textView_signUp);
-        gibbon = (TextView)findViewById(R.id.textView_gibbon);
+        uName = (TextView) findViewById(R.id.textView_username);
+        pass = (TextView) findViewById(R.id.textView_password);
+        fPass = (TextView) findViewById(R.id.textView_fPass);
+        signup = (TextView) findViewById(R.id.textView_signUp);
+        gibbon = (TextView) findViewById(R.id.textView_gibbon);
 
-        signIn = (Button)findViewById(R.id.button_signIn);
+        signIn = (Button) findViewById(R.id.button_signIn);
 
         final SpannableStringBuilder sb = new SpannableStringBuilder("Gibbon");
 
@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
 
         userName.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onTouch(View v,MotionEvent event) {
+            public boolean onTouch(View v, MotionEvent event) {
                 uName.setTextColor(Color.parseColor("#E84A5F"));
                 userName.getBackground().setColorFilter(getResources().getColor(R.color.colorAccent), PorterDuff.Mode.SRC_ATOP);
 
@@ -98,12 +98,16 @@ public class LoginActivity extends AppCompatActivity {
                 userId = userName.getText().toString().trim();
                 passWord = password.getText().toString().trim();
                 ServerDatabase checkLogin = new ServerDatabase();
-                verify = checkLogin.validate(userId,passWord);
-                if(verify){
-                    Intent dash = new Intent(LoginActivity.this,DashboardActivity.class);
+                verify = checkLogin.validate(userId, passWord);
+                if (verify == 0) {
+                    Intent dash = new Intent(LoginActivity.this, DashboardActivity.class);
                     startActivity(dash);
-                }else{
-                    Toast.makeText(getApplicationContext(),"Invalid User Name or Password !",Toast.LENGTH_SHORT).show();
+                } else if (verify == 1) {
+                    Intent dash = new Intent(LoginActivity.this, TeacherDashboardActivity.class);
+                    startActivity(dash);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Invalid User Name or Password !", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });

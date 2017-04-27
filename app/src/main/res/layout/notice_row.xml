@@ -37,7 +37,9 @@
         android:layout_height="40sp"
         android:layout_toEndOf="@+id/textView_Notice_date"
         android:background="@color/colorAccent"
-        android:paddingLeft="0px" />
+        android:paddingLeft="0px"
+        android:layout_alignBottom="@+id/textView_Notice_body"
+        android:layout_alignTop="@+id/textView_Notice_title"/>
 
     <TextView
         android:id="@+id/textView_Notice_title"
@@ -61,8 +63,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/textView_Notice_title"
         android:layout_below="@+id/textView_Notice_date"
-        android:ellipsize="end"
-        android:singleLine="true"
         android:text="Notice body kgf jnmb jb  j hc n jhvj jhj g  h  hyv nm hvhj "
         android:textSize="12sp" />
 

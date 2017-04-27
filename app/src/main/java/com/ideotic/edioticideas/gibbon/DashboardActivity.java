@@ -1,6 +1,7 @@
 package com.ideotic.edioticideas.gibbon;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -141,13 +142,18 @@ public class DashboardActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_timeTable) {
-
+            Intent intent = new Intent(DashboardActivity.this,TimetableActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_faculty) {
 
 
         } else if (id == R.id.nav_fees) {
-
+            this.setTitle("Fee");
+            Fragment_fees stuFee = new Fragment_fees();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container,stuFee);
+            fragmentTransaction.commit();
 
         }else if(id == R.id.nav_dashboard){
             this.setTitle("DashBoard");
@@ -169,7 +175,11 @@ public class DashboardActivity extends AppCompatActivity
     public PieData getPieData(){
 
         ServerDatabase databse = new ServerDatabase();
-        databse.getPieData();
+        try {
+            databse.getPieData();
+        }catch (Exception ex){
+            System.out.println(ex.toString());
+        }
 
         // Data axis for Pie Chart
          float[] yData = {databse.present,databse.absent,databse.holidays};

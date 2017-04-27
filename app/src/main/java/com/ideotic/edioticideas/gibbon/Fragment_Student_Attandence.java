@@ -35,7 +35,11 @@ public class Fragment_Student_Attandence extends Fragment {
          view =  inflater.inflate(R.layout.fragment_fragment__student__attandence, container, false);
 
         database = new ServerDatabase();
-        database.getPieData();
+        try {
+            database.getPieData();
+        }catch(Exception ex){
+            System.out.println(ex.toString());
+        }
         pieChart = (PieChart)view.findViewById(R.id.student_pie_attendance);
         createPieChart();
         init();

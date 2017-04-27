@@ -99,4 +99,7 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="title_activity_timetable">TimetableActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_teacher_dashboard">Dashboard</string>
 </resources>
