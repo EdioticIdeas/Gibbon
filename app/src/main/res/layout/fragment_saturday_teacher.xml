@@ -170,7 +170,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty2"
+                        android:id="@+id/textView_TT_faculty2_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -184,7 +184,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_below="@+id/textView_TT_subject2_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty2"
+                        android:layout_toEndOf="@+id/textView_TT_faculty2_monday"
                         android:gravity="bottom"
                         android:text="4"
                         android:textColor="#000000"
@@ -242,7 +242,7 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView_TT_subject3"
+                        android:id="@+id/textView_TT_subject3_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -255,7 +255,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty3"
+                        android:id="@+id/textView_TT_faculty3_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -267,9 +267,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject3"
+                        android:layout_below="@+id/textView_TT_subject3_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty3"
+                        android:layout_toEndOf="@+id/textView_TT_faculty3_monday"
                         android:gravity="bottom"
                         android:text="2"
                         android:textColor="#000000"
@@ -327,7 +327,7 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView_TT_subject4"
+                        android:id="@+id/textView_TT_subject4_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -340,7 +340,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty4"
+                        android:id="@+id/textView_TT_faculty4_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -352,9 +352,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject4"
+                        android:layout_below="@+id/textView_TT_subject4_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty4"
+                        android:layout_toEndOf="@+id/textView_TT_faculty4_monday"
                         android:gravity="bottom"
                         android:text="2"
                         android:textColor="#000000"
@@ -412,7 +412,7 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView_TT_subject5"
+                        android:id="@+id/textView_TT_subject5_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -425,7 +425,7 @@
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty5"
+                        android:id="@+id/textView_TT_faculty5_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -437,9 +437,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject5"
+                        android:layout_below="@+id/textView_TT_subject5_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty5"
+                        android:layout_toEndOf="@+id/textView_TT_faculty5_monday"
                         android:gravity="bottom"
                         android:text="2"
                         android:textColor="#000000"

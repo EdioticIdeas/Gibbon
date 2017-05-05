@@ -18,11 +18,11 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText userName, password;
+    public static EditText userName = null, password = null;
     private TextView uName, pass, fPass, signup, gibbon;
     private Button signIn;
 
-    private static String userId, passWord;
+    public static String userId = null, passWord = null;
     private static int verify;
 
     @Override
@@ -97,17 +97,23 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 userId = userName.getText().toString().trim();
                 passWord = password.getText().toString().trim();
-                ServerDatabase checkLogin = new ServerDatabase();
-                verify = checkLogin.validate(userId, passWord);
-                if (verify == 0) {
-                    Intent dash = new Intent(LoginActivity.this, DashboardActivity.class);
-                    startActivity(dash);
-                } else if (verify == 1) {
-                    Intent dash = new Intent(LoginActivity.this, TeacherDashboardActivity.class);
-                    startActivity(dash);
+                if (userId.equals("") || passWord.equals("")) {
+                    Toast.makeText(LoginActivity.this, "Please enter User Name and Password", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Invalid User Name or Password !", Toast.LENGTH_SHORT).show();
+                    Fragment_Student_Profile.userid = userId;
+                    ServerDatabase.userID = userId;
+                    ServerDatabase checkLogin = new ServerDatabase();
+                    verify = checkLogin.validate(userId, passWord);
+                    if (verify == 0) {
+                        Intent dash = new Intent(LoginActivity.this, DashboardActivity.class);
+                        startActivity(dash);
+                    } else if (verify == 1) {
+                        Intent dash = new Intent(LoginActivity.this, TeacherDashboardActivity.class);
+                        startActivity(dash);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Invalid User Name or Password !", Toast.LENGTH_SHORT).show();
 
+                    }
                 }
             }
         });

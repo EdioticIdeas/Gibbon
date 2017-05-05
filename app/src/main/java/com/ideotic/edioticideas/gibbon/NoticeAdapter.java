@@ -4,8 +4,10 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -13,52 +15,53 @@ import java.util.ArrayList;
  * Created by Mukul on 20-04-2017.
  */
 
-public class NoticeAdapter extends BaseAdapter{
+public class NoticeAdapter extends ArrayAdapter<Notice> {
 
     TextView date, time, noticeTitle, noticeBody;
-    ArrayList<Notice> notices;
-    Context context;
+    String timeAndDate[];
 
     public NoticeAdapter(Context context, ArrayList<Notice> notices) {
-        this.context = context;
-        this.notices = notices;
+        super(context, 0, notices);
     }
 
-    @Override
-    public int getCount() {
-        return notices.size();
+    // View lookup cache
+    private static class ViewHolder {
+        TextView txtDate;
+        TextView txtTime;
+        TextView txtNoticeTitle;
+        TextView txtNoticeBody;
     }
 
-    @Override
-    public Object getItem(int position) {
-        return notices.get(position);
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Notice notice = notices.get(position);
+        Notice notice = getItem(position);
+
+        ViewHolder viewHolder; // view lookup cache stored in tag
 
 
+        if (convertView == null) {
 
-            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view = inflater.inflate(R.layout.notice_row, null, false);
-            date = (TextView) convertView.findViewById(R.id.textView_Notice_date);
-            time = (TextView) convertView.findViewById(R.id.textView_Notice_time);
-            noticeTitle = (TextView) convertView.findViewById(R.id.textView_Notice_title);
-            noticeBody = (TextView) convertView.findViewById(R.id.textView_Notice_body);
+            viewHolder = new ViewHolder();
+            LayoutInflater inflater = LayoutInflater.from(getContext());
+            convertView = inflater.inflate(R.layout.notice_row, parent, false);
 
+            viewHolder.txtDate = (TextView) convertView.findViewById(R.id.textView_Notice_date);
+            viewHolder.txtTime = (TextView) convertView.findViewById(R.id.textView_Notice_time);
+            viewHolder.txtNoticeBody = (TextView) convertView.findViewById(R.id.textView_Notice_body);
+            viewHolder.txtNoticeTitle = (TextView) convertView.findViewById(R.id.textView_Notice_title);
 
-        date.setText(notice.getDate());
-        time.setText(notice.getTime());
-        noticeTitle.setText(notice.getTitle());
-        noticeBody.setText(notice.getBody());
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
 
-        return view;
+        viewHolder.txtDate.setText(notice.getDate());
+        viewHolder.txtTime.setText(notice.getTime());
+        viewHolder.txtNoticeTitle.setText(notice.getTitle());
+        viewHolder.txtNoticeBody.setText(notice.getBody());
+
+        return convertView;
     }
 }

@@ -38,7 +38,7 @@
         android:layout_toEndOf="@+id/textView_Notice_date"
         android:background="@color/colorAccent"
         android:paddingLeft="0px"
-        android:layout_alignBottom="@+id/textView_Notice_body"
+        android:layout_alignBottom="@+id/textView_library_bookId"
         android:layout_alignTop="@+id/textView_Notice_title"/>
 
     <TextView

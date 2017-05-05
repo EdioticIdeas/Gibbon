@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="15dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/textView_teacherViewAttendance_attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/view"
+        android:gravity="center_horizontal"
+        android:text="22/33"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_teacherViewAttendance_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_teacherViewAttendance_name"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_teacherViewAttendance_name"
+        android:text="stu13cse4" />
+
+    <TextView
+        android:id="@+id/textView_teacherViewAttendance_name"
+        android:layout_width="240sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:text="Praveen Patel"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2px"
+        android:layout_height="40sp"
+        android:layout_toEndOf="@+id/textView_teacherViewAttendance_name"
+        android:background="@color/colorAccent"
+        android:paddingEnd="10dp"
+        android:layout_alignBottom="@+id/textView_teacherViewAttendance_id"
+        android:layout_alignTop="@+id/textView_teacherViewAttendance_name" />
+
+</RelativeLayout>

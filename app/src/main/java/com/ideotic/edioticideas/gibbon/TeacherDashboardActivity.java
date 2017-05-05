@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class TeacherDashboardActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -38,8 +39,8 @@ public class TeacherDashboardActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Chat :) coming soon", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(TeacherDashboardActivity.this, ChatAct.class);
+                startActivity(intent);
             }
         });
 
@@ -51,6 +52,8 @@ public class TeacherDashboardActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override
@@ -85,7 +88,6 @@ public class TeacherDashboardActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -104,7 +106,11 @@ public class TeacherDashboardActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.fragment_container, teaProf);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_attendence) {
-
+            this.setTitle("Report");
+            Fragment_teacher_reportAttendance teaAten = new Fragment_teacher_reportAttendance();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, teaAten);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_notice) {
 
         } else if (id == R.id.nav_calender) {
@@ -114,7 +120,19 @@ public class TeacherDashboardActivity extends AppCompatActivity
             Intent intent = new Intent(TeacherDashboardActivity.this, Timetable_TeacherActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_student) {
-
+            this.setTitle("Student");
+            Fragment_StudentDetails studentDetails = new Fragment_StudentDetails();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, studentDetails);
+            fragmentTransaction.commit();
+        } else if (id == R.id.nav_takeAttendance) {
+            Toast.makeText(this, "take attendance", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_library) {
+            this.setTitle("Library");
+            library_fragment library_fragment = new library_fragment();
+            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, library_fragment);
+            fragmentTransaction.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

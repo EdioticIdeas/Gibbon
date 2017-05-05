@@ -7,8 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-
+import android.widget.ProgressBar;
 import java.util.ArrayList;
+
+import SocketConnect.Request;
+import SocketConnect.Response;
+import SocketConnect.ServerConnection;
+import USER.NoticeList;
+import Util.RequestedType;
+
+import static com.ideotic.edioticideas.gibbon.ServerDatabase.ipAddress;
+import static com.ideotic.edioticideas.gibbon.ServerDatabase.portNumber;
 
 
 /**
@@ -19,28 +28,61 @@ public class Fragment_NoticeBoard extends Fragment {
     ListView list;
     NoticeAdapter noticeAdapter;
     ArrayList<Notice> notices;
+    ProgressBar marker;
+    ArrayList<NoticeList> listNotice;
+    Thread serverThread;
 
     public Fragment_NoticeBoard() {
         // Required empty public constructor
     }
 
 
+    View view;
+
+    @Override
+    public void onStart() {
+
+        getNoticeData();
+        super.onStart();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        notices = new ArrayList<>();
-        notices.add(new Notice("Holidays", "Holidays starting from 24 th of june 2017 to 25 of july.", "Oct 24", "12:24 A.M."));
-        notices.add(new Notice("Holidays", "Holidays starting from 24 th of june 2017 to 25 of july.", "Oct 24", "12:24 A.M."));
-        notices.add(new Notice("Holidays", "Holidays starting from 24 th of june 2017 to 25 of july.", "Oct 24", "12:24 A.M."));
+        view = inflater.inflate(R.layout.fragment_fragment__notice_board, container, false);
+        marker = (ProgressBar) view.findViewById(R.id.marker_progress_notice);
+        list = (ListView) view.findViewById(R.id.listView_notice);
 
-        noticeAdapter = new NoticeAdapter(getActivity(), notices);
-
-        list = new ListView(getActivity());
         list.setAdapter(noticeAdapter);
 
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment__notice_board, container, false);
+        return view;
+    }
+
+
+    public void getNoticeData() {
+        serverThread = new Thread() {
+            @Override
+            public void run() {
+                try {
+                    ServerConnection connection = new ServerConnection(ipAddress, portNumber);
+                    Request req = new Request(null, null, null, RequestedType.NOTICE);
+                    Response res = (Response) connection.read(req);
+                    listNotice = (ArrayList<NoticeList>) res.getRequestedObject();
+                    notices = new ArrayList<>();
+                    for (NoticeList notice : listNotice) {
+                        String[] datetime = notice.getId().split(",");
+                        notices.add(new Notice(notice.getTitle(), notice.getDetails(), datetime[0], datetime[1]));
+                        noticeAdapter = new NoticeAdapter(getActivity(), notices);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        serverThread.start();
+        while (serverThread.isAlive()) ;
     }
 
 }

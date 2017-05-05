@@ -70,7 +70,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#FF000001">
 
                 <TextView
@@ -81,6 +81,7 @@
                     android:layout_alignBottom="@+id/textView84"
                     android:layout_alignEnd="@+id/textView_student_profile_addmdate"
                     android:layout_alignStart="@+id/textView_student_profile_addmdate"
+                    android:layout_marginTop="12px"
                     android:text="GEN"
                     android:textAlignment="textStart"
                     android:textColor="#ffffff" />
@@ -90,6 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/textView23"
+                    android:layout_marginBottom="12dp"
                     android:layout_marginTop="25dp"
                     android:layout_toStartOf="@+id/view"
                     android:gravity="center_horizontal"
@@ -100,13 +102,14 @@
                     android:id="@+id/textView_profiel_student_gender"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male"
-                    android:textAlignment="textStart"
-                    android:textColor="#ffffff"
                     android:layout_alignBaseline="@+id/textView92"
                     android:layout_alignBottom="@+id/textView92"
+                    android:layout_alignEnd="@+id/textView_student_profile_address"
                     android:layout_alignStart="@+id/textView_student_profile_address"
-                    android:layout_alignEnd="@+id/textView_student_profile_address" />
+                    android:layout_marginBottom="12dp"
+                    android:text="Male"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
 
                 <TextView
                     android:id="@+id/textView90"
@@ -161,6 +164,7 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/textView90"
                     android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
                     android:layout_toStartOf="@+id/view"
                     android:gravity="center_horizontal"
                     android:text="Category"
@@ -170,13 +174,13 @@
                     android:id="@+id/textView_student_profile_gaurdian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Aman Tiwari"
-                    android:textAlignment="textStart"
-                    android:textColor="#ffffff"
                     android:layout_alignBaseline="@+id/textView90"
                     android:layout_alignBottom="@+id/textView90"
+                    android:layout_alignEnd="@+id/textView_profiel_student_gender"
                     android:layout_alignStart="@+id/textView_profiel_student_gender"
-                    android:layout_alignEnd="@+id/textView_profiel_student_gender" />
+                    android:text="Aman Tiwari"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
 
                 <TextView
                     android:id="@+id/textView23"

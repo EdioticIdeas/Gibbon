@@ -19,6 +19,18 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
+import STUDENT.StuTimeTable;
+import SocketConnect.Request;
+import SocketConnect.Response;
+import SocketConnect.ServerConnection;
+import Util.RequestedType;
+
+import static com.ideotic.edioticideas.gibbon.ServerDatabase.ipAddress;
+import static com.ideotic.edioticideas.gibbon.ServerDatabase.portNumber;
+
 public class TimetableActivity extends AppCompatActivity {
 
     /**
@@ -30,6 +42,9 @@ public class TimetableActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
+    Thread timetableThread = null;
+    Response response;
+    public static ArrayList<StuTimeTable> list;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -41,6 +56,8 @@ public class TimetableActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timetable);
         setTitle("Time Table");
+
+        // initializeTimeTable();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -150,5 +167,23 @@ public class TimetableActivity extends AppCompatActivity {
             }
             return null;
         }
+    }
+
+    public void initializeTimeTable() {
+        timetableThread = new Thread() {
+            @Override
+            public void run() {
+                ServerConnection connection = new ServerConnection(ipAddress, portNumber);
+                Request request = new Request(null, null, null, RequestedType.STUTIMETABLE);
+                try {
+                    response = (Response) connection.read(request);
+                    list = (ArrayList<StuTimeTable>) response.getRequestedObject();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        timetableThread.start();
+        while (timetableThread.isAlive()) ;
     }
 }

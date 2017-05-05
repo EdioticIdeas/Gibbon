@@ -308,42 +308,6 @@
                         android:textSize="15sp" />
                 </RelativeLayout>
 
-                <View
-                    android:layout_width="300sp"
-                    android:layout_height="2px"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_margin="10dp"
-                    android:background="#000000" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60sp"
-                    android:layout_margin="5sp"
-                    android:background="@color/colorPrimary"
-                    android:padding="5sp"
-                    android:paddingStart="10sp">
-
-                    <TextView
-                        android:id="@+id/textView_attendance_6"
-                        android:layout_width="200px"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="19dp"
-                        android:text="22/33"
-                        android:textColor="#ffffff"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/textView_sub_6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
-                        android:text="Databse Management System"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="15sp" />
-                </RelativeLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

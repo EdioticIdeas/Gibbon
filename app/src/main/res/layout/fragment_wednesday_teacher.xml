@@ -165,12 +165,12 @@
                         android:layout_alignParentTop="true"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Database Management System"
+                        android:text="Compiler Design"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty2"
+                        android:id="@+id/textView_TT_faculty2_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -184,7 +184,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_below="@+id/textView_TT_subject2_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty2"
+                        android:layout_toEndOf="@+id/textView_TT_faculty2_monday"
                         android:gravity="bottom"
                         android:text="4"
                         android:textColor="#000000"
@@ -242,7 +242,7 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView_TT_subject3"
+                        android:id="@+id/textView_TT_subject3_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -250,12 +250,12 @@
                         android:layout_alignParentTop="true"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Database Management System"
+                        android:text="Analysis and Design of Algorithms"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty3"
+                        android:id="@+id/textView_TT_faculty3_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -267,9 +267,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject3"
+                        android:layout_below="@+id/textView_TT_subject3_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty3"
+                        android:layout_toEndOf="@+id/textView_TT_faculty3_monday"
                         android:gravity="bottom"
                         android:text="2"
                         android:textColor="#000000"
@@ -327,7 +327,7 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView_TT_subject4"
+                        android:id="@+id/textView_TT_subject4_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -335,12 +335,12 @@
                         android:layout_alignParentTop="true"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Database Management System"
+                        android:text="Free"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty4"
+                        android:id="@+id/textView_TT_faculty4_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -352,9 +352,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject4"
+                        android:layout_below="@+id/textView_TT_subject4_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty4"
+                        android:layout_toEndOf="@+id/textView_TT_faculty4_monday"
                         android:gravity="bottom"
                         android:text="2"
                         android:textColor="#000000"
@@ -412,7 +412,7 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView_TT_subject5"
+                        android:id="@+id/textView_TT_subject5_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
@@ -420,12 +420,12 @@
                         android:layout_alignParentTop="true"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="Database Management System"
+                        android:text="Free"
                         android:textColor="@color/colorAccent"
                         android:textSize="18sp" />
 
                     <TextView
-                        android:id="@+id/textView_TT_faculty5"
+                        android:id="@+id/textView_TT_faculty5_monday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
@@ -437,9 +437,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject5"
+                        android:layout_below="@+id/textView_TT_subject5_monday"
                         android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty5"
+                        android:layout_toEndOf="@+id/textView_TT_faculty5_monday"
                         android:gravity="bottom"
                         android:text="2"
                         android:textColor="#000000"
@@ -456,90 +456,6 @@
                 </RelativeLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="88dp"
-                android:layout_marginBottom="100sp"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="70sp"
-                    android:layout_height="match_parent"
-                    android:gravity="right|center_vertical">
-
-                    <TextView
-                        android:id="@+id/textView39"
-                        android:layout_width="60sp"
-                        android:layout_height="50sp"
-                        android:gravity="center_horizontal"
-                        android:text="3:00 P.M."
-                        android:textColor="@color/dark"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/textView_TT_room6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignEnd="@+id/textView39"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@+id/textView39"
-                        android:gravity="center_horizontal"
-                        android:text="CS203"
-                        android:textColor="@color/colorAccent" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10sp"
-                    android:background="@android:color/darker_gray"
-                    android:padding="10sp">
-
-                    <TextView
-                        android:id="@+id/textView_TT_subject6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:ellipsize="end"
-                        android:singleLine="true"
-                        android:text="Database Management System"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/textView_TT_faculty6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_alignParentStart="true"
-                        android:text="SEM" />
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_below="@+id/textView_TT_subject6"
-                        android:layout_marginLeft="10sp"
-                        android:layout_toEndOf="@+id/textView_TT_faculty6"
-                        android:gravity="bottom"
-                        android:text="2"
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="Period 6"
-                        android:textColor="#ffffff"/>
-                </RelativeLayout>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

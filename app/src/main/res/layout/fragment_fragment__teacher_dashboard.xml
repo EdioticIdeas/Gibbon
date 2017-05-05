@@ -297,6 +297,53 @@
                                 android:text="A.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
+                            <TextView
+                                android:id="@+id/teacher_tt_third_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view3"
+                                android:ellipsize="marquee"
+                                android:text="Free"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_third_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/teacher_tt_third_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/student_tt_third_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView6"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B203"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
+                            <TextView
+                                android:id="@+id/textView_sem3_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp"
+                                android:layout_alignBaseline="@+id/student_tt_third_faculty"
+                                android:layout_alignBottom="@+id/student_tt_third_faculty"
+                                android:layout_toEndOf="@+id/student_tt_third_faculty" />
+
                         </RelativeLayout>
 
                         <RelativeLayout
@@ -392,6 +439,54 @@
                                 android:text="P.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
+                            <TextView
+                                android:id="@+id/student_tt_fourth_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view5"
+                                android:ellipsize="marquee"
+                                android:text="Theory of Computation"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_fourth_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/student_tt_fourth_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textView_sem4_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/student_tt_fourth_faculty"
+                                android:layout_alignBottom="@+id/student_tt_fourth_faculty"
+                                android:layout_toEndOf="@+id/student_tt_fourth_faculty"
+                                android:text="7"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+
+                            <TextView
+                                android:id="@+id/student_tt_fourth_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView10"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B204"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
 
                         </RelativeLayout>
 
@@ -431,47 +526,57 @@
                                 android:text="P.M."
                                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="70sp"
-                            android:layout_marginBottom="5sp"
-                            android:background="#dddddd">
-
-                            <View
-                                android:id="@+id/view7"
-                                android:layout_width="1px"
-                                android:layout_height="40dp"
-                                android:layout_centerVertical="true"
-                                android:layout_marginLeft="100sp"
-                                android:background="#536065" />
-
                             <TextView
-                                android:id="@+id/textView14"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
+                                android:id="@+id/student_tt_fifth_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
                                 android:layout_alignParentTop="true"
                                 android:layout_margin="10sp"
-                                android:text="03:00"
-                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:layout_toEndOf="@+id/view6"
+                                android:ellipsize="marquee"
+                                android:text="Database Management System"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_fifth_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/student_tt_fifth_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textView_sem5_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/student_tt_fifth_faculty"
+                                android:layout_alignBottom="@+id/student_tt_fifth_faculty"
+                                android:layout_toEndOf="@+id/student_tt_fifth_faculty"
+                                android:text="7"
                                 android:textColor="@color/colorAccent"
                                 android:textSize="25sp" />
 
+
                             <TextView
-                                android:id="@+id/textView15"
+                                android:id="@+id/student_tt_fifth_room"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignEnd="@+id/view7"
-                                android:layout_alignParentBottom="true"
-                                android:layout_margin="10sp"
-                                android:text="P.M."
-                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView12"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B204"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
 
 
                         </RelativeLayout>
+
                     </LinearLayout>
                 </android.support.v4.widget.NestedScrollView>
             </RelativeLayout>
@@ -485,10 +590,21 @@
                 android:layout_marginRight="2sp"
                 android:layout_marginTop="20sp"
                 android:background="#ffffff"
-                android:elevation="2sp"
-                android:padding="8sp">
+                android:elevation="2sp">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
 
 
+                    <WebView
+                        android:id="@+id/webView_teacherDashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </android.support.v4.widget.NestedScrollView>
             </RelativeLayout>
 
             <RelativeLayout

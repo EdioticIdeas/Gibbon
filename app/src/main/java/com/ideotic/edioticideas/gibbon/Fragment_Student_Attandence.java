@@ -12,6 +12,10 @@ import android.widget.TextView;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 
+import java.util.ArrayList;
+
+import STUDENT.StuSubjectAttendence;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +25,7 @@ public class Fragment_Student_Attandence extends Fragment {
     private PieChart pieChart;
     TextView pr,ab,ho;
     View view;
+    TextView tvsub1, tvsub2, tvsub3, tvsub4, tvsub5;
     ServerDatabase database;
 
     public Fragment_Student_Attandence() {
@@ -34,7 +39,17 @@ public class Fragment_Student_Attandence extends Fragment {
         // Inflate the layout for this fragment
          view =  inflater.inflate(R.layout.fragment_fragment__student__attandence, container, false);
 
+        tvsub1 = (TextView) view.findViewById(R.id.textView_attendance_1);
+        tvsub2 = (TextView) view.findViewById(R.id.textView_attendance_2);
+        tvsub3 = (TextView) view.findViewById(R.id.textView_attendance_3);
+        tvsub4 = (TextView) view.findViewById(R.id.textView_attendance_4);
+        tvsub5 = (TextView) view.findViewById(R.id.textView_attendance_5);
+
+
         database = new ServerDatabase();
+        ArrayList<StuSubjectAttendence.Attendence> list = database.getSubjectAttandence();
+        System.out.print(list.get(1).getSubject());
+
         try {
             database.getPieData();
         }catch(Exception ex){
