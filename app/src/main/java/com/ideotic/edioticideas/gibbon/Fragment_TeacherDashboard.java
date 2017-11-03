@@ -49,8 +49,8 @@ public class Fragment_TeacherDashboard extends Fragment {
         Calendar calendar = Calendar.getInstance();
         Date newDate = calendar.getTime();
         day.setText(new SimpleDateFormat("EEEE", Locale.ENGLISH).format(newDate.getTime()));
-        String setDate = new SimpleDateFormat("dd-mm-yyyy").format(new Date());
-        date.setText(setDate);
+        // String setDate = new SimpleDateFormat("dd/yyyy").format(new Date());
+        //date.setText(setDate);
 
         webView = (WebView) view.findViewById(R.id.webView_teacherDashboard);
         webView.setWebViewClient(new MyBrowser());

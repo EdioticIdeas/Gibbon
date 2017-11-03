@@ -154,10 +154,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
                         android:text="Databse Management System"
                         android:textColor="@color/colorAccent"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_alignStart="@+id/textView_attendance_1" />
                 </RelativeLayout>
 
                 <View
@@ -191,10 +191,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
                         android:text="Databse Management System"
                         android:textColor="@color/colorAccent"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_alignStart="@+id/textView_attendance_2" />
                 </RelativeLayout>
 
                 <View
@@ -228,10 +228,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
                         android:text="Databse Management System"
                         android:textColor="@color/colorAccent"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_alignStart="@+id/textView_attendance_3" />
                 </RelativeLayout>
 
                 <View
@@ -265,10 +265,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
                         android:text="Databse Management System"
                         android:textColor="@color/colorAccent"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_alignStart="@+id/textView_attendance_4" />
                 </RelativeLayout>
 
                 <View
@@ -302,10 +302,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
-                        android:layout_alignParentStart="true"
                         android:text="Databse Management System"
                         android:textColor="@color/colorAccent"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:layout_alignStart="@+id/textView_attendance_5" />
                 </RelativeLayout>
 
             </LinearLayout>

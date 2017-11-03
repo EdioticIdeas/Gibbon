@@ -153,7 +153,11 @@ public class DashboardActivity extends AppCompatActivity
             fragmentTransaction.commit();
 
         } else if (id == R.id.nav_calender) {
-
+            this.setTitle("Academic Calendar");
+            AcademicCalender calender = new AcademicCalender();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, calender);
+            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_timeTable) {
             Intent intent = new Intent(DashboardActivity.this, TimetableActivity.class);

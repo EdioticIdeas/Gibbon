@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5sp"
                 android:layout_marginTop="5sp"
-                android:text="Message of the day."
+                android:text='"HardWork is the KEY to SUCCESS"'
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -61,7 +61,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginStart="77dp"
                     android:layout_toEndOf="@+id/textView16_WhichDay"
-                    android:text="12/07/2017"
+                    android:text="09/05/2017"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#ffffff" />
             </RelativeLayout>

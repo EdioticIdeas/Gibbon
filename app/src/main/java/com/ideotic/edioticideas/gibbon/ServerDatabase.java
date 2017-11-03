@@ -20,7 +20,7 @@ import Util.RequestedType;
  */
 public class ServerDatabase {
 
-    public static final String ipAddress = "192.168.0.101";
+    public static final String ipAddress = "192.168.1.102";
     public static final int portNumber = 8189;
     private Handler handler;
     Thread serverThread = null;

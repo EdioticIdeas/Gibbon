@@ -54,7 +54,7 @@ public class MyAdapter extends BaseAdapter {
         TextView tv_init = (TextView) view.findViewById(R.id.tv_init);
         final TextView tv_P = (TextView) view.findViewById(R.id.tv_p);
 
-        LinearLayout li = (LinearLayout) view.findViewById(R.id.li);
+        /**    LinearLayout li = (LinearLayout) view.findViewById(R.id.li);
         li.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +77,8 @@ public class MyAdapter extends BaseAdapter {
         } else {
             tv_P.setText("A");
         }
-        //tv_name.setText(a[position]);
+         //tv_name.setText(a[position]);  **/
         return view;
+
     }
 }

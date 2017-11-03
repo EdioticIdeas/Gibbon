@@ -28,7 +28,6 @@ public class Fragment_NoticeBoard extends Fragment {
     ListView list;
     NoticeAdapter noticeAdapter;
     ArrayList<Notice> notices;
-    ProgressBar marker;
     ArrayList<NoticeList> listNotice;
     Thread serverThread;
 
@@ -42,7 +41,6 @@ public class Fragment_NoticeBoard extends Fragment {
     @Override
     public void onStart() {
 
-        getNoticeData();
         super.onStart();
     }
 
@@ -51,9 +49,11 @@ public class Fragment_NoticeBoard extends Fragment {
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_fragment__notice_board, container, false);
-        marker = (ProgressBar) view.findViewById(R.id.marker_progress_notice);
         list = (ListView) view.findViewById(R.id.listView_notice);
 
+        getNoticeData();
+
+        noticeAdapter = new NoticeAdapter(getActivity(), notices);
         list.setAdapter(noticeAdapter);
 
         return view;
@@ -73,7 +73,6 @@ public class Fragment_NoticeBoard extends Fragment {
                     for (NoticeList notice : listNotice) {
                         String[] datetime = notice.getId().split(",");
                         notices.add(new Notice(notice.getTitle(), notice.getDetails(), datetime[0], datetime[1]));
-                        noticeAdapter = new NoticeAdapter(getActivity(), notices);
                     }
                 } catch (Exception e) {
                     e.printStackTrace();

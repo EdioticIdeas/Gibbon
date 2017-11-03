@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -112,9 +113,17 @@ public class TeacherDashboardActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.fragment_container, teaAten);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_notice) {
-
+            this.setTitle("Notice Board");
+            Fragment_NoticeBoard stuNot = new Fragment_NoticeBoard();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, stuNot);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_calender) {
-
+            this.setTitle("Academic Calendar");
+            AcademicCalender calender = new AcademicCalender();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, calender);
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_timeTable) {
             this.setTitle("Time Table");
             Intent intent = new Intent(TeacherDashboardActivity.this, Timetable_TeacherActivity.class);
