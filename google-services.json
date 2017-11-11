@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "589739332248",
+    "firebase_url": "https://gibbon2-60a01.firebaseio.com",
+    "project_id": "gibbon2-60a01",
+    "storage_bucket": "gibbon2-60a01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589739332248:android:d1d42094439b7188",
+        "android_client_info": {
+          "package_name": "com.ideotic.edioticideas.gibbon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589739332248-6eqf7u0bfud45u42c5cll1h8mochper1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ideotic.edioticideas.gibbon",
+            "certificate_hash": "332ad41be22110f41521ea85211efb1e55777066"
+          }
+        },
+        {
+          "client_id": "589739332248-812u4osao6ikfarubgb7e584a98io5u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg2tSDaIbvyRRnSt6t2ezGF4fxmJlJLlY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589739332248-812u4osao6ikfarubgb7e584a98io5u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
