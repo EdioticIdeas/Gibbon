@@ -1,0 +1,344 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000001"
+    android:padding="0dp"
+    tools:context="com.ideotic.edioticideas.gibbon.Fragment_Student_Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270sp"
+                android:background="@drawable/pbck">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#46000000">
+
+                    <TextView
+                        android:id="@+id/textView_name_student_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="143dp"
+                        android:text="Mukul Tiwari"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView_student_profile_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView_name_student_profile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2sp"
+                        android:text="0203CS131026"
+                        android:textColor="?android:attr/textColorSecondaryNoDisable"
+                        android:textSize="12sp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="47dp"
+                        android:src="@drawable/male" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF000001">
+
+                <TextView
+                    android:id="@+id/textView_profile_student_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView84"
+                    android:layout_alignBottom="@+id/textView84"
+                    android:layout_alignEnd="@+id/textView_student_profile_addmdate"
+                    android:layout_alignStart="@+id/textView_student_profile_addmdate"
+                    android:layout_marginTop="12px"
+                    android:text="GEN"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView23"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:gravity="center_horizontal"
+                    android:text="Gender"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_profiel_student_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView92"
+                    android:layout_alignBottom="@+id/textView92"
+                    android:layout_alignEnd="@+id/textView_student_profile_address"
+                    android:layout_alignStart="@+id/textView_student_profile_address"
+                    android:layout_marginBottom="12dp"
+                    android:text="Male"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/view"
+                    android:layout_alignStart="@+id/textView21"
+                    android:layout_marginBottom="19dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:gravity="center_horizontal"
+                    android:text="Gaurdian"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_student_profile_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView23"
+                    android:layout_alignBottom="@+id/textView23"
+                    android:layout_alignEnd="@+id/textView_student_profile_dob"
+                    android:layout_alignStart="@+id/textView_student_profile_dob"
+                    android:text="H.NO. 25, Patrakar Colony , Jabalpur"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView21"
+                    android:layout_marginTop="15dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:gravity="center_horizontal"
+                    android:text="Admission Date"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_student_profile_addmdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView86"
+                    android:layout_alignBottom="@+id/textView86"
+                    android:layout_alignEnd="@+id/textView_student_profile_address"
+                    android:layout_alignStart="@+id/textView_student_profile_address"
+                    android:text="12/07/1997"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView90"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:gravity="center_horizontal"
+                    android:text="Category"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_student_profile_gaurdian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView90"
+                    android:layout_alignBottom="@+id/textView90"
+                    android:layout_alignEnd="@+id/textView_profiel_student_gender"
+                    android:layout_alignStart="@+id/textView_profiel_student_gender"
+                    android:text="Aman Tiwari"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView86"
+                    android:layout_marginTop="12dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:gravity="center_horizontal"
+                    android:text="Address"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_student_profile_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView21"
+                    android:layout_alignBottom="@+id/textView21"
+                    android:layout_alignEnd="@+id/textView_student_profile_contact"
+                    android:layout_alignStart="@+id/textView_student_profile_contact"
+                    android:text="12/7/1994"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView32"
+                    android:layout_below="@+id/textView32"
+                    android:layout_marginTop="15dp"
+                    android:layout_toStartOf="@+id/view"
+                    android:gravity="center_horizontal"
+                    android:text="D.O.B"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_student_profile_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView32"
+                    android:layout_alignBottom="@+id/textView32"
+                    android:layout_alignEnd="@+id/textView_student_profile_email"
+                    android:layout_alignStart="@+id/textView_student_profile_email"
+                    android:text="8745965325"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView_student_profile_email"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView26"
+                    android:layout_alignTop="@+id/view"
+                    android:text="abc123@gmail.com"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView31"
+                    android:layout_alignStart="@+id/textView31"
+                    android:layout_below="@+id/textView31"
+                    android:layout_marginTop="15dp"
+                    android:text="Contact"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView_studentProfile_branch"
+                    android:layout_alignStart="@+id/textView_studentProfile_branch"
+                    android:layout_below="@+id/view14"
+                    android:layout_marginTop="25dp"
+                    android:text="Email "
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView_studentProfile_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView25"
+                    android:layout_alignStart="@+id/textView25"
+                    android:layout_below="@+id/textView25"
+                    android:layout_marginTop="7dp"
+                    android:text="CSE"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView_studentProfile_sem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView_studentProfile_branch"
+                    android:layout_alignBottom="@+id/textView_studentProfile_branch"
+                    android:layout_alignEnd="@+id/textView26"
+                    android:layout_alignStart="@+id/textView26"
+                    android:layout_marginEnd="12dp"
+                    android:text="7th"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView25"
+                    android:layout_alignBottom="@+id/textView25"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="48dp"
+                    android:text="Semester"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginTop="27dp"
+                    android:text="Branch"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/view14"
+                    android:layout_width="300sp"
+                    android:layout_height="2px"
+                    android:layout_below="@+id/textView_studentProfile_branch"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20sp"
+                    android:background="@color/colorAccent" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="2px"
+                    android:layout_height="260dp"
+                    android:layout_alignTop="@+id/textView31"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20sp"
+                    android:layout_toRightOf="@+id/textView32"
+                    android:background="@color/colorAccent"
+                    android:paddingLeft="0px" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

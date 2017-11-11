@@ -1,0 +1,974 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:padding="0dp"
+    tools:context="com.ideotic.edioticideas.gibbon.Fragment_Student_Dashboard">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp"
+        android:nestedScrollingEnabled="true"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:text='"HardWork is the KEY to SUCCESS"'
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="20sp"
+                android:background="@color/colorAccent"
+                android:elevation="5sp">
+
+                <TextView
+                    android:id="@+id/textView16_WhichDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10sp"
+                    android:text="Thursday"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView16_WhichDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="77dp"
+                    android:layout_toEndOf="@+id/textView16_WhichDay"
+                    android:text="09/05/2017"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="0dp"
+                android:background="#ffffff"
+                android:elevation="2sp">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/scrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70sp"
+                            android:layout_marginBottom="5sp"
+                            android:background="#dddddd">
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="1px"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="100sp"
+                                android:background="#536065" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:text="09:00"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/view"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="10sp"
+                                android:text="A.M."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/student_tt_first_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view"
+                                android:ellipsize="marquee"
+                                android:text="Computer Networks"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_first_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/student_tt_first_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/student_tt_first_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView2"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B203"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
+                            <TextView
+                                android:id="@+id/textView_sem_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp"
+                                android:layout_alignBaseline="@+id/student_tt_first_faculty"
+                                android:layout_alignBottom="@+id/student_tt_first_faculty"
+                                android:layout_toEndOf="@+id/student_tt_first_faculty" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70sp"
+                            android:layout_marginBottom="5sp"
+                            android:background="#dddddd">
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="1px"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="100sp"
+                                android:background="#536065" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:text="10:00"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/view1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="10sp"
+                                android:text="A.M."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/student_tt_second_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view1"
+                                android:ellipsize="marquee"
+                                android:text="Database Management System"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_second_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/student_tt_second_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textView_sem2_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/student_tt_second_faculty"
+                                android:layout_alignBottom="@+id/student_tt_second_faculty"
+                                android:layout_toEndOf="@+id/student_tt_second_faculty"
+                                android:text="7"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+
+                            <TextView
+                                android:id="@+id/student_tt_second_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView4"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B204"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70sp"
+                            android:layout_marginBottom="5sp"
+                            android:background="#dddddd">
+
+                            <View
+                                android:id="@+id/view3"
+                                android:layout_width="1px"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="100sp"
+                                android:background="#536065" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:text="11:00"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/view3"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="10sp"
+                                android:text="A.M."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/teacher_tt_third_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view3"
+                                android:ellipsize="marquee"
+                                android:text="Free"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_third_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/teacher_tt_third_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/student_tt_third_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView6"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B203"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
+                            <TextView
+                                android:id="@+id/textView_sem3_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp"
+                                android:layout_alignBaseline="@+id/student_tt_third_faculty"
+                                android:layout_alignBottom="@+id/student_tt_third_faculty"
+                                android:layout_toEndOf="@+id/student_tt_third_faculty" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70sp"
+                            android:layout_marginBottom="5sp"
+                            android:background="@drawable/food">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#3b000000">
+
+                                <View
+                                    android:id="@+id/view4"
+                                    android:layout_width="1px"
+                                    android:layout_height="40dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="100sp"
+                                    android:background="#ffffff" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="10sp"
+                                    android:text="12:00"
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="25sp" />
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignEnd="@+id/view4"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_margin="10sp"
+                                    android:text="P.M."
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#ffffff" />
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignTop="@+id/textView8"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_toEndOf="@+id/view4"
+                                    android:text="Lunch "
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textColor="#ffffff" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70sp"
+                            android:layout_marginBottom="5sp"
+                            android:background="#dddddd">
+
+                            <View
+                                android:id="@+id/view5"
+                                android:layout_width="1px"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="100sp"
+                                android:background="#536065" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:text="01:00"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/view5"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="10sp"
+                                android:text="P.M."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/student_tt_fourth_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view5"
+                                android:ellipsize="marquee"
+                                android:text="Theory of Computation"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_fourth_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/student_tt_fourth_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textView_sem4_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/student_tt_fourth_faculty"
+                                android:layout_alignBottom="@+id/student_tt_fourth_faculty"
+                                android:layout_toEndOf="@+id/student_tt_fourth_faculty"
+                                android:text="7"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+
+                            <TextView
+                                android:id="@+id/student_tt_fourth_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView10"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B204"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70sp"
+                            android:layout_marginBottom="5sp"
+                            android:background="#dddddd">
+
+                            <View
+                                android:id="@+id/view6"
+                                android:layout_width="1px"
+                                android:layout_height="40dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="100sp"
+                                android:background="#536065" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:text="02:00"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/view6"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="10sp"
+                                android:text="P.M."
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                            <TextView
+                                android:id="@+id/student_tt_fifth_subject"
+                                android:layout_width="250sp"
+                                android:layout_height="25sp"
+                                android:layout_alignParentTop="true"
+                                android:layout_margin="10sp"
+                                android:layout_toEndOf="@+id/view6"
+                                android:ellipsize="marquee"
+                                android:text="Database Management System"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/dark" />
+
+                            <TextView
+                                android:id="@+id/student_tt_fifth_faculty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignStart="@+id/student_tt_fifth_subject"
+                                android:layout_margin="10sp"
+                                android:ellipsize="marquee"
+                                android:text="SEM"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textView_sem5_teacher"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/student_tt_fifth_faculty"
+                                android:layout_alignBottom="@+id/student_tt_fifth_faculty"
+                                android:layout_toEndOf="@+id/student_tt_fifth_faculty"
+                                android:text="7"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="25sp" />
+
+
+                            <TextView
+                                android:id="@+id/student_tt_fifth_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/textView12"
+                                android:layout_marginLeft="5sp"
+                                android:layout_marginRight="5sp"
+                                android:text="B204"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/colorAccent" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/student_rlayout_pie"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="20sp"
+                android:background="#ffffff"
+                android:elevation="2sp">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+
+                    <WebView
+                        android:id="@+id/webView_teacherDashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </android.support.v4.widget.NestedScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="20sp"
+                android:background="#ffffff"
+                android:elevation="2sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@color/colorAccent"
+                        android:elevation="5sp">
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="17dp"
+                            android:layout_toStartOf="@+id/textView20"
+                            android:gravity="center_vertical"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="120px" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="23dp"
+                            android:text="Academic Events"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view11"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3events_1"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view11"
+                            android:ellipsize="end"
+                            android:text="Summer Holidays 24th April 2017 - 30th june 2017."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view12"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3events_2"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view12"
+                            android:ellipsize="end"
+                            android:text="Summer holidays starting from 2nd of july till 4th of December enjoy cheers!!"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view13"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3events_3"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view13"
+                            android:ellipsize="end"
+                            android:text="Tech Fest Halcyon 2017 from 24th April onwards."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="20sp"
+                android:background="#ffffff"
+                android:elevation="2sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:background="@color/colorAccent"
+                        android:elevation="5sp">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="150dp"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="120px" />
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="23dp"
+                            android:text="Top Notices"
+                            android:textColor="#ffffff"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view8"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3notices_1"
+                            android:layout_width="340sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view8"
+                            android:ellipsize="end"
+                            android:text="Exams are postponed and will never going to happen again Cheers!"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view9"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3notices_2"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view9"
+                            android:ellipsize="end"
+                            android:text="Summer holidays starting from 2nd of july till 4th of December enjoy cheers!!"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="83sp">
+
+                        <View
+                            android:id="@+id/view10"
+                            android:layout_width="1px"
+                            android:layout_height="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="100sp"
+                            android:background="#536065" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="18dp"
+                            android:layout_marginStart="45sp"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:id="@+id/textView_student_3notices_3"
+                            android:layout_width="320sp"
+                            android:layout_height="200px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginStart="20sp"
+                            android:layout_toRightOf="@+id/view10"
+                            android:ellipsize="end"
+                            android:text="Campus Drive activities starting from 24 april . Google, Amazon, MindTree, Microsoft are lined up."
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="400sp"
+                        android:layout_height="1px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#536065" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

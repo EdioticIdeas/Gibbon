@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/textView_Student_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_Student_email"
+        android:layout_below="@+id/textView_Student_email"
+        android:text="945236458"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_Student_id"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="12dp"
+        android:text="stu13cse4"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_Student_id"
+        android:layout_alignStart="@+id/textView_Student_id"
+        android:layout_below="@+id/textView_Student_id"
+        android:layout_marginTop="1dp"
+        android:text="Student Id"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2px"
+        android:layout_height="40sp"
+        android:layout_alignBottom="@+id/textView_Student_contact"
+        android:layout_alignTop="@+id/textView_Student_name"
+        android:layout_toEndOf="@+id/textView_Student_id"
+        android:background="@color/colorAccent"
+        android:paddingLeft="0px" />
+
+    <TextView
+        android:id="@+id/textView_Student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="20sp"
+        android:layout_toEndOf="@+id/view"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Praveen Patel"
+        android:textColor="@color/dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_Student_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_Student_name"
+        android:layout_below="@+id/textView_Student_name"
+        android:text="praveen.patel@gmail.com"
+        android:textSize="12sp" />
+
+</RelativeLayout>

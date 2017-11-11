@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/textView_library_authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView100"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView_library_bookId"
+        android:text="S. Chand"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_library_noOfCopies"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_horizontal"
+        android:text="20"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_library_noOfCopies"
+        android:layout_alignStart="@+id/textView_library_noOfCopies"
+        android:layout_below="@+id/textView_library_noOfCopies"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:text="Copies"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="2px"
+        android:layout_height="40sp"
+        android:layout_toEndOf="@+id/textView_library_noOfCopies"
+        android:background="@color/colorAccent"
+        android:paddingLeft="0px"
+        android:layout_alignBottom="@+id/textView_library_bookId"
+        android:layout_alignTop="@+id/textView_library_bookName" />
+
+    <TextView
+        android:id="@+id/textView_library_bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="20sp"
+        android:layout_toEndOf="@+id/view"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="Database Management Systems"
+        android:textColor="@color/dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_library_bookId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_library_bookName"
+        android:layout_below="@+id/textView_library_noOfCopies"
+        android:text="Author - "
+        android:textSize="12sp" />
+
+</RelativeLayout>
