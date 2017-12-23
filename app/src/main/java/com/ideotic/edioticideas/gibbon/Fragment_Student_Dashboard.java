@@ -51,13 +51,13 @@ public class Fragment_Student_Dashboard extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        view = inflater.inflate(R.layout.fragment_fragment__student__dashboard, container, false);
-        day = (TextView) view.findViewById(R.id.textView16_WhichDay);
+       view = inflater.inflate(R.layout.fragment_fragment__student__dashboard, container, false);
+         day = (TextView) view.findViewById(R.id.textView16_WhichDay);
         date = (TextView) view.findViewById(R.id.textView16_WhichDate);
         Calendar calendar = Calendar.getInstance();
         Date newDate = calendar.getTime();
         day.setText(new SimpleDateFormat("EEEE", Locale.ENGLISH).format(newDate.getTime()));
-        // String setDate = new SimpleDateFormat("dd-mm-yyyy").format(new Date());
+       // String setDate = new SimpleDateFormat("dd-mm-yyyy").format(new Date());
         //date.setText(setDate);
 
 

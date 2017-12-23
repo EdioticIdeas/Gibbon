@@ -3,10 +3,8 @@ package com.ideotic.edioticideas.gibbon;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class TeacherDashboardActivity extends AppCompatActivity
@@ -29,7 +28,7 @@ public class TeacherDashboardActivity extends AppCompatActivity
 
         //Setting Fragment initially.
         Fragment_TeacherDashboard teaDash = new Fragment_TeacherDashboard();
-        android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragment_container, teaDash);
         fragmentTransaction.commit();
 
@@ -97,19 +96,19 @@ public class TeacherDashboardActivity extends AppCompatActivity
         if (id == R.id.nav_dashboard) {
             this.setTitle("Dash Board");
             Fragment_TeacherDashboard teaDash = new Fragment_TeacherDashboard();
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, teaDash);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_profile) {
             this.setTitle("Profile");
             Fragment_Teacher_Profile teaProf = new Fragment_Teacher_Profile();
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, teaProf);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_attendence) {
             this.setTitle("Report");
             Fragment_teacher_reportAttendance teaAten = new Fragment_teacher_reportAttendance();
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, teaAten);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_notice) {
@@ -131,7 +130,7 @@ public class TeacherDashboardActivity extends AppCompatActivity
         } else if (id == R.id.nav_student) {
             this.setTitle("Student");
             Fragment_StudentDetails studentDetails = new Fragment_StudentDetails();
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, studentDetails);
             fragmentTransaction.commit();
         } else if (id == R.id.nav_takeAttendance) {
@@ -139,7 +138,7 @@ public class TeacherDashboardActivity extends AppCompatActivity
         } else if (id == R.id.nav_library) {
             this.setTitle("Library");
             library_fragment library_fragment = new library_fragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, library_fragment);
             fragmentTransaction.commit();
         }

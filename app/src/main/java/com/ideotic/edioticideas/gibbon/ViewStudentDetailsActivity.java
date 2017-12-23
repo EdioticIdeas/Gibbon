@@ -1,7 +1,7 @@
 package com.ideotic.edioticideas.gibbon;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -10,7 +10,6 @@ import STUDENT.StudentProfile;
 import SocketConnect.Request;
 import SocketConnect.Response;
 import SocketConnect.ServerConnection;
-import USER.LIBRARY.Books;
 import Util.RequestedType;
 
 import static com.ideotic.edioticideas.gibbon.ServerDatabase.ipAddress;

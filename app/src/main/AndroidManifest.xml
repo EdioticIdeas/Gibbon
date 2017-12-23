@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ideotic.edioticideas.gibbon">
 
@@ -25,21 +25,6 @@
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TimetableActivity"
-            android:label="@string/title_activity_timetable"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TeacherDashboardActivity"
-            android:label="@string/title_activity_teacher_dashboard"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Timetable_TeacherActivity"
-            android:label="Time Table"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ChatAct" />
-        <activity android:name=".ViewAttendanceActivity" />
-        <activity android:name=".ViewStudentDetailsActivity"></activity>
-    </application>
 
-</manifest>
+        </application>
+    </manifest>

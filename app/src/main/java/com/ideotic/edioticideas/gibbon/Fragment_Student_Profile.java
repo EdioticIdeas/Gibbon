@@ -1,9 +1,6 @@
 package com.ideotic.edioticideas.gibbon;
 
 
-import android.animation.ObjectAnimator;
-import android.app.ProgressDialog;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,7 +10,6 @@ import android.widget.TextView;
 
 import java.io.IOException;
 
-import STUDENT.StuAttendenceCount;
 import STUDENT.StudentProfile;
 import SocketConnect.Request;
 import SocketConnect.Response;

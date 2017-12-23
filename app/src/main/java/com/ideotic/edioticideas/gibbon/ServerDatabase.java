@@ -1,7 +1,6 @@
 package com.ideotic.edioticideas.gibbon;
 
 import android.os.Handler;
-import android.widget.Toast;
 
 import java.io.IOException;
 import java.util.ArrayList;
