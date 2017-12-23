@@ -81,6 +81,11 @@ public class LoginActivity extends AppCompatActivity {
         fPass.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                if (!uName.getText().equals("")) {
+                    Toast.makeText(LoginActivity.this, "Password sent to registered email id.", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(LoginActivity.this, "Please enter correct user id.", Toast.LENGTH_SHORT).show();
+                }
                 return false;
             }
         });
@@ -88,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
         signup.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                Toast.makeText(LoginActivity.this, "For Sign Up details please visit administration.", Toast.LENGTH_SHORT).show();
                 return false;
             }
         });
